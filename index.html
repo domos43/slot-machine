@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Jackpot</title>
+<meta name="description" content="Slot do jackpota"> 
+<meta name="keywords" content="jackpot, slot, maszyna">
+<style>
+body {
+	font-family:verdana,arial;
+
+}
+.bd {
+	text-align:center;
+}
+.container {
+	margin:0 auto;
+	width:1000px;
+	height:1200px;
+	
+}
+.slot-wrapper {
+	background-image:url("images/ramkadojackpota2.png");
+	width:1000px;
+	height:800px;
+}
+.slot {
+	background:url("images/normalne.png") repeat-y; 
+	width:168px;
+	height:213px;
+	border:1px solid #000;
+	background-position:0 4px;
+	float:left;
+	margin-top:392px;
+
+}
+.motion {
+	background:url("images/rozmazane.png") repeat-y; 
+}
+button {
+	display:block;
+	width:138px;
+	height:33px;
+	margin:10px 500px;
+	font-size:16px;
+	cursor:pointer;
+}
+#result {
+	font-size:40px;
+	font-weight:bold;
+	height:10px;
+	margin-bottom:60px;
+}
+.credits {
+	font-size:15px;
+	
+}
+.credits .browsers {
+	font-style:italic;
+	font-size:14px;
+	color:#777;
+	margin-top:4px;
+}
+.clear {
+	clear:both;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.spritely.js"></script>
+<script src="jquery.backgroundPosition.js"></script>
+<script src="slot.js"></script>
+</head>
+
+<body>
+<div class="hd">
+</div>
+<div class="bd">
+	<img src="images/jackpot.jpg" alt="jackpot" />
+	<div class="container">
+		<div class="slot-wrapper">
+			<div style="margin-left:201px" id="slot1" class="slot"></div>
+			<div style="margin-left:38px"id="slot2" class="slot"></div>
+			<div style="margin-left:38px" id="slot3" class="slot"></div>
+			<div class="clear"></div>
+		</div>
+		<div id="result"></div>
+		<div><button id="control">Start</button></div>
+	</div>
+	<div class="credits">
+		<div>Wykonanie: Dominik Kowalewski</div>
+	</div>
+</div>
+</body>
+</html>
